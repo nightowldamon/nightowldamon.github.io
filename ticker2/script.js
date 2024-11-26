@@ -2,7 +2,7 @@ let sentences = []; // Initialize as empty array
 
 // Function to load sentences from file
 function loadSentences() {
-    return fetch('placeholder.txt')
+    return fetch('ticker2/placeholder.txt')
         .then(response => response.text())
         .then(text => {
             sentences = text.split('\n').filter(sentence => sentence.trim() !== '');
